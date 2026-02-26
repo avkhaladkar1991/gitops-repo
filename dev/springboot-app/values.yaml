@@ -1,26 +1,26 @@
 replicaCount: 2
 
 image:
-  repository: avkhaladkar1991/nodejs-devops-app
-  tag: "5"
+  repository: avkhaladkar1991/springboot-gitops-demo
+  tag: "1"
   pullPolicy: IfNotPresent
 
 service:
   type: ClusterIP
-  port: 3000
+  port: 8080
 
 resources:
   limits:
     cpu: 500m
     memory: 512Mi
   requests:
-    cpu: 200m
+    cpu: 250m
     memory: 256Mi
 
 ingress:
   enabled: true
   className: nginx
-  host: nodejs.local
+  host: springboot-dev.local
   path: /
 
 autoscaling:
@@ -30,4 +30,6 @@ autoscaling:
   targetCPUUtilizationPercentage: 70
 
 env:
-  MONGO_URI: "mongodb://mongodb:27017/mydatabase"
+  DB_HOST: postgres
+  DB_PORT: 5432
+  DB_NAME: devdb

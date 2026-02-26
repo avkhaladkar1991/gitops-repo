@@ -1,0 +1,11 @@
+image:
+  repository: postgres
+  tag: "15"
+
+persistence:
+  size: 1Gi
+
+database:
+  name: devdb
+  user: postgres
+  password: postgres
