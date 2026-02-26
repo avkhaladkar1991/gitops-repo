@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: avkhaladkar1991/nodejs-devops-app
-  tag: "1"
+  tag: "5"
   pullPolicy: IfNotPresent
 
 service:
