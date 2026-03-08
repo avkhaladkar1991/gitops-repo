@@ -1,0 +1,8 @@
+name: product-service
+
+image:
+  repository: gcr.io/ecommerce/product-service
+  tag: "1"
+
+container:
+  port: 8082

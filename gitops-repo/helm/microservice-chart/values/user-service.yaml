@@ -1,0 +1,10 @@
+name: user-service
+
+image:
+  repository: gcr.io/ecommerce/user-service
+  tag: "1"
+
+container:
+  port: 8081
+
+replicaCount: 2
