@@ -4,7 +4,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 
 metadata:
-  name: {{ .Values.name }}-ingress
+  name: payment-service
 
 spec:
   rules:
@@ -17,9 +17,8 @@ spec:
 
         backend:
           service:
-            name: {{ .Values.name }}
-
+            name: payment-service
             port:
-              number: 80
+              number: {{ .Values.service.port }}
 
 {{- end }}
