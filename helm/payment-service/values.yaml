@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: docker.io/avkhaladkar1991/payment-service
-  tag: "12"
+  tag: "13"
   pullPolicy: Always
 
 service:
