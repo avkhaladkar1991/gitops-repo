@@ -10,5 +10,5 @@ service:
   port: 8081
 
 ingress:
-  enabled: true
+  enabled: false
   host: user.example.com
