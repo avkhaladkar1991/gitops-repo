@@ -1,0 +1,14 @@
+replicaCount: 2
+
+image:
+  repository: docker.io/avkhaladkar1991/user-service
+  tag: "7"
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 8081
+
+ingress:
+  enabled: true
+  host: user.example.com
