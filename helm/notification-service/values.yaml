@@ -1,0 +1,13 @@
+replicaCount: 2
+
+image:
+  repository: docker.io/avkhaladkar1991/notification-service
+  tag: "1"
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 8085
+
+ingress:
+  enabled: false
