@@ -1,0 +1,14 @@
+replicaCount: 2
+
+image:
+  repository: docker.io/avkhaladkar1991/api-gateway
+  tag: "2"
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 8080
+
+ingress:
+  enabled: true
+  host: ecommerce.local
