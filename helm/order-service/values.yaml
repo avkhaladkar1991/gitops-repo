@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: docker.io/avkhaladkar1991/order-service
-  tag: "1"   # 👈 update based on Jenkins build
+  tag: "2"   # 👈 update based on Jenkins build
   pullPolicy: Always
 
 service:
