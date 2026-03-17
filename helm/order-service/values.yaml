@@ -1,0 +1,21 @@
+replicaCount: 2
+
+image:
+  repository: docker.io/avkhaladkar1991/order-service
+  tag: "1"   # 👈 update based on Jenkins build
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 8083
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 300m
+    memory: 256Mi
+
+ingress:
+  enabled: false
